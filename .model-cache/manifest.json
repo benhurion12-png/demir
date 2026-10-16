@@ -1,0 +1,38 @@
+{
+  "model_name": "SSAE-METAFormer",
+  "format_version": 1,
+  "cfg": {
+    "INPUT_DIM": 50,
+    "HIDDEN_DIM_1": 128,
+    "HIDDEN_DIM_2": 64,
+    "LATENT_DIM": 32,
+    "NUM_ATLASES": 3,
+    "EMBED_DIM": 128,
+    "MF_DEPTH": 4,
+    "MF_HEADS": 2,
+    "MF_MLP_RATIO": 4.0,
+    "DROPOUT": 0.25,
+    "USE_MEAN_FD": true,
+    "FISHER_CLIP": 0.999
+  },
+  "atlas_names": [
+    "AAL",
+    "Schaefer",
+    "HarvardOxford"
+  ],
+  "feature_shape": [
+    3,
+    50
+  ],
+  "latent_shape": [
+    3,
+    32
+  ],
+  "checkpoint": "ssae_metaformer_optimized.pt",
+  "bundle_source": "c:\\Users\\Lenovo\\OneDrive\\Desktop\\ASD_Project\\data\\SSAEMulti_Atlas\\new_gen\\results_optimized_loso\\checkpoints\\ssae_metaformer_optimized_bundle.pt",
+  "scalers": {
+    "AAL": "scaler_AAL.pkl",
+    "Schaefer": "scaler_Schaefer.pkl",
+    "HarvardOxford": "scaler_HarvardOxford.pkl"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.gitignore
+*.log
+README.md
+*.nii
+*.nii.gz
+*.csv

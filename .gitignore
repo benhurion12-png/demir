@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+*.log
+.env*
+!.env.example
+.DS_Store
+tsconfig.tsbuildinfo
+*.nii
+*.nii.gz
+*.csv
